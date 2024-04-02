@@ -35,6 +35,9 @@ http://localhost:8080/principal.html
 Allí se le abrirá el siguiente formulario 
 ![](imagenes/principal.PNG)
 Si usted desea sacar la factorial de un numero use el primer formulario, escriba el numero la la caja de texto y de clic en el botón que se encuentra al lado de esta.
+![](imagenes/Factorial.PNG)
+Para este ejemplo vamos a hacer el factorial del numero 15, al dar click sobre el boton “ok” el formulario le devolvera la respuesta en un formato js. 
+
 
 
 

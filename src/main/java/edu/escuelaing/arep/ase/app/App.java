@@ -3,28 +3,28 @@ import static spark.Spark.*;
 import edu.escuelaing.arep.ase.app.mathService.MathServicioFactorial;
 import edu.escuelaing.arep.ase.app.mathService.MathServicioPrimo;
 
+import edu.escuelaing.arep.ase.app.roudrobin.RoundRobinFactorial;
+import edu.escuelaing.arep.ase.app.roudrobin.RoundRobinPrimos;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        MathServicioFactorial mathServicioFactorial = new MathServicioFactorial();
+        
 
-        MathServicioPrimo methServicioPrimo = new MathServicioPrimo();
+        RoundRobinFactorial roundRobinF = new RoundRobinFactorial();
+        RoundRobinPrimos roundRobinP = new RoundRobinPrimos();
 
         port(8080);
         staticFileLocation("/public");
         get("/factors",(req,res)->{
             String value = req.queryParams("value");
-            return 
+            return roundRobinF.invocar(value);
         });
 
         get("/primes",(req,res)->{
             String value = req.queryParams("value");
-            return "{" +
-            "\"operation\":" + "\"primes\"," +
-            "\"input\":" + value + "," +
-            "\"primes\":" + methServicioPrimo.secuencia(Integer.parseInt(value))  +
-            "}";
+            return roundRobinP.invocar(value);
         });
     }
 }

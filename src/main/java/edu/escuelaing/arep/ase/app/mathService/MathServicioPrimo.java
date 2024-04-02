@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MathServicioPrimo {
+    private int index=0;
+    public MathServicioPrimo(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
 
 
     public String secuencia(int numero){
@@ -45,6 +53,15 @@ public class MathServicioPrimo {
         }else{
             return bandera=false;
         }
+
+    }
+
+    public String formatoRespuesta(String numero){
+        return"{" +
+        "\"operation\":" + "\"primes\"," +
+        "\"input\":" + numero + "," +
+        "\"primes\":" + secuencia(Integer.parseInt(numero))  +
+        "}";
 
     }
     

@@ -5,21 +5,21 @@ import java.util.List;
 
 import edu.escuelaing.arep.ase.app.mathService.MathServicioFactorial;
 
-public class RoundRobin {
-        private List<MathServicioFactorial> mathServicioFactorial;
+public class RoundRobinFactorial {
+    private List<MathServicioFactorial> mathServicioFactorial;
     private int index;
 
-    public RoundRobin(int cantidadServicios, int puerto){
+    public RoundRobinFactorial(int cantidadServicios, int puerto){
         index = 0;
         mathServicioFactorial = new ArrayList<>();
 
         for(int i = 0; i < cantidadServicios; i++){
-            mathServicioFactorial.add(new mathServicioFactorial(i));
+            mathServicioFactorial.add(new MathServicioFactorial(i));
 
         }
     }
 
-    public RoundRobin(){
+    public RoundRobinFactorial(){
         this(2,8080);
     }
 

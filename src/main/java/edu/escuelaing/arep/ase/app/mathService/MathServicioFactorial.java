@@ -5,6 +5,16 @@ import java.util.List;
 
 public class MathServicioFactorial {
 
+    private int index = 0;
+
+    public MathServicioFactorial(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
     public String secuenciaFactorial(int numero){
 
         List<Integer> lista = new ArrayList<Integer>();
