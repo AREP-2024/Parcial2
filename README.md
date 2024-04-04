@@ -138,8 +138,8 @@ Como se observa en la siguiente imagen:
 La instalación y ejecución del proyecto es similar a la mencionada anteriormente, con la diferencia de que la declaración de las variables de entorno en la instancia del proxy se realiza de la siguiente manera:
 
 ```
-export MATH_HOST_1="http://localhost"
-export MATH_HOST_2="http://localhost"
+export MATH_HOST_1="http://ec2-44-223-63-12.compute-1.amazonaws.com"
+export MATH_HOST_2="http://ec2-54-224-209-157.compute-1.amazonaws.com"
 export MATH_PORT_1=8080
 export MATH_PORT_2=8080
 ```
@@ -154,6 +154,7 @@ echo $MATH_PORT_2
 ```
 En el siguiente enlace usted podrá ver el video con el respectivo despliegue en aws:
 ```
+https://youtu.be/WrNQ0u3aazs
 ```
 
 ## Autor
