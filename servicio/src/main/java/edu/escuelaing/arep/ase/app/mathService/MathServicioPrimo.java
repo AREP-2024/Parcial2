@@ -18,7 +18,7 @@ public class MathServicioPrimo {
     public String secuencia(int numero){
         List<Integer> lista = new ArrayList<>();
 
-        for(int j = 2; j < numero; j++){
+        for(int j = 2; j <= numero; j++){
            if(primo(j)){
             lista.add(j);
            }
@@ -40,7 +40,7 @@ public class MathServicioPrimo {
 
     public boolean primo(int numero){       
 
-        for(int i=2; i<numero/2;i++){
+        for(int i=2; i<=numero/2;i++){
             if (numero%i==0) {
                 return false;
             }             
