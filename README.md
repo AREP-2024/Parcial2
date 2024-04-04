@@ -1,9 +1,12 @@
 # Parcial AREP - 2
 
 Se diseño y desplego una aplicación web que está compuesta por dos formularios:
-•	Uno que calcula los números hasta un numero dado (n)
-•	Y otro que calcula los factores de un numero (n)
-Ambos reciben y dan numero enteros positivo. El programa esta desplegado en aws en tres maquinas virtuales de EC2.
+
+•	Uno que calcula los números hasta un numero dado (n).
+
+•	Y otro que calcula los factores de un numero (n).
+
+Ambos reciben y dan numero enteros positivo. El programa esta desplegado en aws en tres instancias de EC2.
 
 # Prerequisitos
 
