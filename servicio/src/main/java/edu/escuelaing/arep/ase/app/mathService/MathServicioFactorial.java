@@ -19,7 +19,7 @@ public class MathServicioFactorial {
 
         List<Integer> lista = new ArrayList<Integer>();
         lista.add(1);
-        for(int i= 2; i<numero; i++){
+        for(int i= 2; i<=numero/2; i++){
             if (numero%i==0) {
                 lista.add(i);
             }

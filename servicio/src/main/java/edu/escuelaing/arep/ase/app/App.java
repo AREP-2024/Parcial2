@@ -1,7 +1,5 @@
 package edu.escuelaing.arep.ase.app;
 import static spark.Spark.*;
-import edu.escuelaing.arep.ase.app.mathService.MathServicioFactorial;
-import edu.escuelaing.arep.ase.app.mathService.MathServicioPrimo;
 
 import edu.escuelaing.arep.ase.app.roudrobin.RoundRobinFactorial;
 import edu.escuelaing.arep.ase.app.roudrobin.RoundRobinPrimos;

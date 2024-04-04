@@ -16,10 +16,10 @@ public class MathServicioPrimo {
 
 
     public String secuencia(int numero){
-        List<Integer> lista = new ArrayList<Integer>();
+        List<Integer> lista = new ArrayList<>();
 
         for(int j = 2; j < numero; j++){
-           if(primo(j)==false){
+           if(primo(j)){
             lista.add(j);
            }
 
@@ -38,21 +38,14 @@ public class MathServicioPrimo {
 
     }
 
-    public boolean primo(int numero){
-        boolean bandera = true;
-        int contador = 0;
-        for(int i=1; i<=numero;i++){
-            if (numero%i==0) {
-                    contador ++;
-            }            
-            
-        }
+    public boolean primo(int numero){       
 
-        if (contador>2) {
-            return bandera;
-        }else{
-            return bandera=false;
+        for(int i=2; i<numero/2;i++){
+            if (numero%i==0) {
+                return false;
+            }             
         }
+        return true;
 
     }
 

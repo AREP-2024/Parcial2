@@ -20,6 +20,7 @@ function factorial(){
 }
 
 async function llamarAPI(endPoint){
+    console.log(endPoint);
     return await fetch(window.location.origin + endPoint)
     .then((responder)=>{
         if(!responder.ok){
